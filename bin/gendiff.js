@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander'
+import genDiff from '../src/index.js'
 
-const program = new Command();
+const program = new Command()
 
 program
   .name('gendiff')
@@ -12,10 +13,13 @@ program
   .arguments('<filepath1> <filepath2>')
   .action((filepath1, filepath2) => {
     // Здесь позже будет логика сравнения файлов
-    console.log(`Comparing ${filepath1} with ${filepath2}`)
+    //console.log(`Comparing ${filepath1} with ${filepath2}`)
+
+    const diff = genDiff(filepath1, filepath2)
+
+    console.log(diff, 'здесь genDiff')
+
   })
 
 
 program.parse(process.argv)
-
-// program.parse()
