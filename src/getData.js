@@ -5,8 +5,6 @@ const getData = (pathToFile) => {
 
   const absolutePath = path.resolve(pathToFile)
 
-  console.log(absolutePath)
-
   if (!fs.existsSync(absolutePath)) {
     throw new Error(`The file does not exist: ${pathToFile}`)
   }
@@ -16,8 +14,6 @@ const getData = (pathToFile) => {
   const extensionFile = path.extname(absolutePath).slice(1).toLowerCase()
 
   return [dataRaw, extensionFile]
-
-  //const config = JSON.parse(data);
 
 }
 
