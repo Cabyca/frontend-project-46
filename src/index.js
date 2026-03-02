@@ -13,8 +13,8 @@ const genDiff = (pathToFile1, pathToFile2, formatName = 'stylish') => {
     const data1 = parser(dataRaw1, extensionFile1)
     const data2 = parser(dataRaw2, extensionFile2)
 
-    console.log(data1) // object
-    console.log(data2) // object
+    // console.log(data1) // object
+    // console.log(data2) // object
 
     // Уже есть распарсенные данные
 
@@ -22,7 +22,7 @@ const genDiff = (pathToFile1, pathToFile2, formatName = 'stylish') => {
 
     const astTree = buildAstTree(data1, data2)
 
-    console.log(typeof astTree)
+    console.log(astTree)
     
 
 }

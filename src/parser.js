@@ -2,7 +2,7 @@ const parser = (dataRaw, extensionFile) => {
 
 switch (extensionFile) {
   case 'json':
-    console.log('Распарсенные данные', typeof JSON.parse(dataRaw))
+    //console.log('Распарсенные данные', typeof JSON.parse(dataRaw))
     return JSON.parse(dataRaw)
   case 'yml':
   case 'yaml':
