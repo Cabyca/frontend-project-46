@@ -1,5 +1,5 @@
 import getData from "./getData.js"
-import parser from "./parser.js"
+import parsers from "./parsers.js"
 import buildAstTree from "./buildAstTree"
 
 const genDiff = (pathToFile1, pathToFile2, formatName = 'stylish') => {
@@ -10,8 +10,8 @@ const genDiff = (pathToFile1, pathToFile2, formatName = 'stylish') => {
     //console.log(typeof dataRaw1, extensionFile1)
     //console.log(typeof dataRaw2, extensionFile2)
 
-    const data1 = parser(dataRaw1, extensionFile1)
-    const data2 = parser(dataRaw2, extensionFile2)
+    const data1 = parsers(dataRaw1, extensionFile1)
+    const data2 = parsers(dataRaw2, extensionFile2)
 
     // console.log(data1) // object
     // console.log(data2) // object
