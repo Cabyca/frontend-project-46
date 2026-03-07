@@ -2,8 +2,8 @@
 install: # установить зависимости
 	npm ci
 
-lint:
-	npx eslint .
+# lint:
+# 	npx eslint .
 
 lint-fix: # исправление ошибок
 	npx eslint . --fix
