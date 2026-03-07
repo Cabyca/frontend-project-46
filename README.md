@@ -1,3 +1,11 @@
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Cabyca_frontend-project-46&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Cabyca_frontend-project-46)
+
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=Cabyca_frontend-project-46)](https://sonarcloud.io/summary/new_code?id=Cabyca_frontend-project-46)
+
+
+[![Maintainability Rating](https://sonarcloud.io)](https://sonarcloud.io)
+[![Coverage](https://sonarcloud.io)](https://sonarcloud.io)
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Cabyca/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Cabyca/frontend-project-46/actions)
 

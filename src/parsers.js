@@ -7,8 +7,8 @@ switch (extensionFile) {
     return JSON.parse(dataRaw)
   case 'yml':
   case 'yaml':
-    yaml.load
-    console.log('yaml')
+    //yaml.load
+    return console.log('yaml')
   default:
     throw new Error(`Unknown format: ${extensionFile}`)
 }
