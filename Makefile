@@ -1,6 +1,6 @@
 
-install: # установить зависимости
+install:
 	npm ci
 
 test-coverage:
-	npm test
+	npm run test:coverage

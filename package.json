@@ -18,7 +18,7 @@
   "type": "module",
   "main": "src/index.js",
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "test:coverage": "jest --coverage --coverageReporters=lcov --coverageReporters=text"
   },
   "dependencies": {
     "commander": "^14.0.2",
