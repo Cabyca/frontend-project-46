@@ -13,13 +13,11 @@ program
   .arguments('<filepath1> <filepath2>')
   .action((filepath1, filepath2) => {
     // Здесь позже будет логика сравнения файлов
-    //console.log(`Comparing ${filepath1} with ${filepath2}`)
+    // console.log(`Comparing ${filepath1} with ${filepath2}`)
 
     const diff = genDiff(filepath1, filepath2)
 
-    //console.log(diff, 'здесь genDiff')
-
+    // console.log(diff, 'здесь genDiff')
   })
-
 
 program.parse(process.argv)

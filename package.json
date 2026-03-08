@@ -18,7 +18,10 @@
   "type": "module",
   "main": "src/index.js",
   "scripts": {
-    "test:coverage": "jest --coverage --coverageReporters=lcov --coverageReporters=text"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:coverage": "npm test -- --coverage --coverageReporters=lcov --coverageReporters=text"
   },
   "dependencies": {
     "commander": "^14.0.2",
@@ -26,7 +29,12 @@
     "lodash": "^4.17.23"
   },
   "devDependencies": {
-    "jest": "^30.2.0"
+    "@eslint/js": "^9.0.0",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-import": "^2.32.0",
+    "globals": "^15.0.0",
+    "jest": "^29.0.0"
   },
   "jest": {
     "collectCoverage": true,
@@ -36,8 +44,8 @@
     ],
     "coverageDirectory": "coverage",
     "testMatch": [
-    "**/__tests__/**/*.[jt]s?(x)",
-    "**/?(*.)+(spec|test).[jt]s?(x)"
-  ]
+      "**/__tests__/**/*.[jt]s?(x)",
+      "**/?(*.)+(spec|test).[jt]s?(x)"
+    ]
   }
 }

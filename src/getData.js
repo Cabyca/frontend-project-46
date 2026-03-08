@@ -2,7 +2,6 @@ import fs from 'fs'
 import path from 'path'
 
 const getData = (pathToFile) => {
-
   const absolutePath = path.resolve(pathToFile)
 
   if (!fs.existsSync(absolutePath)) {
@@ -14,7 +13,6 @@ const getData = (pathToFile) => {
   const extensionFile = path.extname(absolutePath).slice(1).toLowerCase()
 
   return [dataRaw, extensionFile]
-
 }
 
 export default getData
