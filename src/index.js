@@ -1,6 +1,6 @@
 import getData from './getData.js'
 import parsers from './parsers.js'
-import buildAstTree from './buildAstTree'
+import buildAstTree from './buildAstTree.js/index.js'
 
 const genDiff = (pathToFile1, pathToFile2, formatName = 'stylish') => {
   const [dataRaw1, extensionFile1] = getData(pathToFile1)

@@ -17,7 +17,7 @@ program
 
     const diff = genDiff(filepath1, filepath2)
 
-    // console.log(diff, 'здесь genDiff')
+    console.log(diff)
   })
 
 program.parse(process.argv)

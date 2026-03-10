@@ -13,3 +13,7 @@ test: # запуск тестов
 
 test-coverage: # запуск тестов с отчетом для SonarCloud
 	npm run test:coverage
+
+test-watch:
+	npm run test:watch
+
