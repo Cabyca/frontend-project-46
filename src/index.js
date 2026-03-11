@@ -21,7 +21,7 @@ const genDiff = (pathToFile1, pathToFile2, formatName = 'stylish') => {
 
   const astTree = buildAstTree(data1, data2)
 
-  console.log(astTree)
+  return astTree
 }
 
 export default genDiff
