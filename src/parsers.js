@@ -6,8 +6,7 @@ const parsers = (dataRaw, extensionFile) => {
       return JSON.parse(dataRaw)
     case 'yml':
     case 'yaml':
-    // yaml.load
-      return console.log('yaml')
+      return yaml.load(dataRaw)
     default:
       throw new Error(`Unknown format: ${extensionFile}`)
   }
