@@ -19,13 +19,13 @@
 
 Пакеты устанавливаются командой composer global require cabyca/php-project-lvl2
 
-Пример работы пакета с файлами формата JSON:
+Сравнение плоских файлов (JSON):
 
 [![asciicast](https://asciinema.org/a/yqT86j1g48H2jZXx.svg)](https://asciinema.org/a/yqT86j1g48H2jZXx)
 
-Пример работы пакета с файлами формата YAML:
+Сравнение плоских файлов (YAML):
 
-
+[![asciicast](https://asciinema.org/a/lH0x4GWCYYQgbR9g.svg)](https://asciinema.org/a/lH0x4GWCYYQgbR9g)
 
 Пример работы пакета для вложенных структур:
 
