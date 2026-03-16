@@ -21,6 +21,10 @@ const genDiff = (pathToFile1, pathToFile2, formatName = 'stylish') => {
 
   const astTree = buildAstTree(data1, data2)
 
+  // console.log(JSON.stringify(buildAstTree(data1, data2), null, 2))
+  console.dir(astTree, { depth: null, colors: true })
+
+
   return astTree
 }
 
