@@ -12,12 +12,8 @@ program
   .option('-f, --format [type]', 'output format')
   .arguments('<filepath1> <filepath2>')
   .action((filepath1, filepath2) => {
-    // Здесь позже будет логика сравнения файлов
-    // console.log(`Comparing ${filepath1} with ${filepath2}`)
-
     const diff = genDiff(filepath1, filepath2)
-
-    // console.log(diff)
+    console.log(diff)
   })
 
 program.parse(process.argv)
