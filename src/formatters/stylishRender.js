@@ -37,6 +37,7 @@ const formatStylish = (tree, depth = 0) => {
         return [
           `${leftIndent}- ${node.key}: ${stringify(node.value1, depth + 4)}`,
           `${leftIndent}+ ${node.key}: ${stringify(node.value2, depth + 4)}`].join('\n')
+      /* istanbul ignore next */
       default:
         throw new Error(`Unknown node type: ${node.type}`)
     }
@@ -46,6 +47,6 @@ const formatStylish = (tree, depth = 0) => {
 }
 
 // Финальная сборка всей строки
-const stylish = tree => `{\n${formatStylish(tree, 0)}\n}`
+const stylishRender = tree => `{\n${formatStylish(tree, 0)}\n}`
 
-export default stylish
+export default stylishRender
