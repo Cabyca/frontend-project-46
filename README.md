@@ -11,13 +11,13 @@
 
 Установите утилиту **make** и установите зависимости в корне проекта командой **make install**
 
-Данный пакет программ предназначен для вычисления отличий файлов форматов json и yaml
+Данный пакет программ предназначен для вычисления отличий файлов форматов json и yml
 
 Результат сравнения файлов может выводиться в разных форматах: stylish ("по умолчанию"), plain ("плоский") или json ("JSON-формат")
 
 Результаты вывода форматов можно увидет ниже в видео
 
-Пакеты устанавливаются командой composer global require cabyca/php-project-lvl2
+Пакеты устанавливаются командой npm install
 
 Сравнение плоских файлов (JSON):
 
@@ -27,12 +27,14 @@
 
 [![asciicast](https://asciinema.org/a/lH0x4GWCYYQgbR9g.svg)](https://asciinema.org/a/lH0x4GWCYYQgbR9g)
 
-Пример работы пакета для вложенных структур:
+Пример работы пакета с применением формата "stylish" для вложенных структур:
 
+[![asciicast](https://asciinema.org/a/ibK6SGEfqkCYR9GZ.svg)](https://asciinema.org/a/ibK6SGEfqkCYR9GZ)
 
+Пример работы пакета с применением формата "plain" для вложенных структур:
 
-Пример работы пакета с применением плоского формата вывода plain:
+[![asciicast](https://asciinema.org/a/FhETbuCM102QvKsQ.svg)](https://asciinema.org/a/FhETbuCM102QvKsQ)
 
+Пример работы пакета с применением формата "json":
 
-
-Пример работы пакета с применением формата json:
+[![asciicast](https://asciinema.org/a/ngk5JbravXj3mKxY.svg)](https://asciinema.org/a/ngk5JbravXj3mKxY)
